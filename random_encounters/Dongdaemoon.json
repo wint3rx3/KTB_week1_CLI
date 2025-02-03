@@ -1,6 +1,6 @@
 {
     "id": "Dongdaemoon",
-    "story": "골라 골라~ 당신은 동대문 시장에 도착했습니다.",
+    "story": "골라 골라~ 당신은 동대문 시장에 도착했습니다.\n구매할 만 한 것이 있으려나?",
     "choices": [
         {
             "description": "열쇠",
@@ -19,6 +19,12 @@
             "effect": {"money": -5, "item": "식량"},
             "requirements": {},
             "player_response": "식량 확보는 생존의 기본입니다."
+        },
+        {
+            "description": "응급구조키트",
+            "effect": {"money": -10, "item": "응급구조키트"},
+            "requirements": {},
+            "player_response": "준비가 철저해서 나쁠 건 없지"
         }
     ]
 }

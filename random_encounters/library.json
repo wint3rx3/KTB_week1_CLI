@@ -16,9 +16,9 @@
         },
         {
             "description": "타짜의 기술",
-            "effect": { "mental": -5, "item": "능숙한 거짓말" },
+            "effect": { "mental": -5, "item": "언변" },
             "requirements": {},
-            "player_response": "동작 그만, 맡장 빼기냐? (멘탈-5, 능숙한 거짓말)"
+            "player_response": "동작 그만, 맡장 빼기냐? (멘탈-5, 언변)"
         },
         {
             "description": "내일은 유도왕",
