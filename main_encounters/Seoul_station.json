@@ -6,6 +6,7 @@
             "choices": [
                 {
                     "description": "뭐라고 외치는 거지?",
+                    "effect": {},
                     "player_response": ""
                 }
             ]
@@ -56,6 +57,7 @@
             "choices": [
                 {
                     "description": "무슨 일이시죠?",
+                    "effect": {},
                     "player_response": ""
                 }
             ]

@@ -6,6 +6,7 @@
             "choices": [
                 {
                     "description": "무슨 일이지?",
+                    "effect": {},
                     "player_response": ""
                 }
             ]
@@ -22,6 +23,7 @@
                 {
                     "description": "조목조목 대화를 나누어본다.",
                     "requirements": {"requires_item": "언변"},
+                    "effect": {},
                     "player_response": "사실 돈은 지불할 필요가 없었군요! 위협이 될 만한 물건만 확인하고 들어갈 수 있었습니다."
                 },
                 {
@@ -36,10 +38,12 @@
             "choices": [
                 {
                     "description": "식량 확보에 더 많은 인원을 투자하고자 하는 민철",
+                    "effect": {},
                     "player_response": "배가 불러야 다음 일도 원활히 할 수 있는 법"
                 },
                 {
                     "description": "추위를 대비하기 위해 터전을 정비하고자 하는 지원",
+                    "effect": {},
                     "player_response": "우리는 혹독한 자연 앞에서 살아남아야 합니다."
                 }
             ]
