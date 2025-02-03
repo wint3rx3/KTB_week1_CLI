@@ -1,0 +1,89 @@
+{
+    "id": "Sinchon",
+    "stages": [
+        {
+            "story": "대학생들이 분주히 돌아다니던 신촌 나들목에는 젊은 청년들이 여전히 생존을 위해 버티고 있습니다.\n이 때, 자신을 학생회라고 소개하는 한 젊은이가 당신에게 말을 겁니다.",
+            "choices": [
+                {
+                    "description": "무슨 일이지?"
+                }
+            ]
+        },
+        {
+            "story": "안녕하세요? 신촌에서 지내기 위해서는 소지품 검사와 함께 회비를 납부하셔야 합니다.",
+            "choices": [
+                {
+                    "description": "돈을 지불한다.",
+                    "effect": { "mental" : -5, "money": -10},
+                    "requirements": { "requires_money": 10 },
+                    "player_response": "감사합니다! 여기서는 학생회가 치안을 담당해줄 겁니다. (멘탈 -5, 돈 -10)"
+                },
+                {
+                    "description": "조목조목 대화를 나누어본다.",
+                    "requirements": {"requires_item": "언변"},
+                    "player_response": "사실 돈은 지불할 필요가 없었군요! 위협이 될 만한 물건만 확인하고 들어갈 수 있었습니다."
+                },
+                {
+                    "description": "내가 왜?",
+                    "effect": {"health": -20, "money" : -20},
+                    "player_response": "당신 혼자서는 무리였습니다. 다치기도 하고 왠지 돈도 더 많이 지불한 것 같군요. (체력 -20, 돈 -20)"
+                }
+            ]
+        },
+        {
+            "story": "보아하니, 곧 있으면 학생회장 선거가 있나봅니다. 각 후보의 벽보를 확인할 수 있었습니다.\n어떤 후보가 더 나으려나요?",
+            "choices": [
+                {
+                    "description": "식량 확보에 더 많은 인원을 투자하고자 하는 민철",
+                    "player_response": "배가 불러야 다음 일도 원활히 할 수 있는 법"
+                },
+                {
+                    "description": "추위를 대비하기 위해 터전을 정비하고자 하는 지원",
+                    "player_response": "우리는 혹독한 자연 앞에서 살아남아야 합니다."
+                }
+            ]
+        },
+        {
+            "story": "오늘은 탐색조가 되어 학생들과 함께 주변을 수색하는 날입니다.",
+            "choices": [
+                {
+                    "description": "식량 발견! 이정도 쯤이야",
+                    "effect": {"health": -10, "item" : "식량"},
+                    "player_response": "배가 불러야 다음 일도 원활히 할 수 있는 법 (식량, 체력 -10)"
+                },
+                {
+                    "description": "저쪽에 아직 물건들이 많은 편의점이 있는데?",
+                    "requirements": {"requires_item": "집중력"},
+                    "player_response": "오늘 수확이 풍족합니다! 마치 영웅이 된 것 같군요"
+                },
+                {
+                    "description": "저기 의류 수거함을 살펴보자",
+                    "effect": {"mental": -10, "item" : "롱패딩"},
+                    "player_response": "조금 지저분하지만 조금만 손보면 따뜻할 것 같군요."
+                }
+            ]
+        },
+        {
+            "story": "신촌에서의 마지막 밤, 학생들이 모여 다 같이 모여 축제를 준비하나 봅니다. 빠질 수 없겠죠?",
+            "choices": [
+                {
+                    "description": "두더지 잡기!",
+                    "requirements": {"requires_item": "민첩함"},
+                    "effect": {"money" : 20},
+                    "player_response": "여기 있는 상금 다 내꺼야 음하하 (돈 +20)"
+                },
+                {
+                    "description": "주점 알바!",
+                    "requirements": {"min_health": 20},
+                    "effect": {"health": -15, "money" : 20},
+                    "player_response": "좀 힘들지만 뭐, 사는게 쉬운게 어디있나요 (체력 -15, 돈 +20)"
+                },
+                {
+                    "description": "공연 관람",
+                    "effect": {"mental": 25},
+                    "player_response": "휴식을 취하니 조금 낫군요."
+                }
+            ]
+        }
+    ]
+}

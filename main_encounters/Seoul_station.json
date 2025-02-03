@@ -1,0 +1,84 @@
+{
+    "id": "Seoul_station",
+    "stages": [
+        {
+            "story": "한 때 수많은 사람들이 분주히 움직였던 서울역, 하지만 지금은 무질서하게 모여있는 사람들만 남아있습니다.\n그리고 광장에 어떤 사람들이 확성기를 가지고 소리치고 있는 것 같습니다.",
+            "choices": [
+                {
+                    "description": "뭐라고 외치는 거지?"
+                }
+            ]
+        },
+        {
+            "story": "여러분! 부디 힘을 보태주십시요! 저희는 다시 일어설 수 있습니다.\n서울역 재건을 위한 목소리가 울려퍼지고 있습니다.",
+            "choices": [
+                {
+                    "description": "돈을 기부한다.",
+                    "effect": { "mental": 35, "money": -20, "item" : "서울역의 감사"},
+                    "requirements": { "requires_money": 20 },
+                    "player_response": "당신은 돈을 기부하고 그들의 신뢰를 얻었습니다. (서울역의 감사, 멘탈 +35, 돈 -20)"
+                },
+                {
+                    "description": "롱패딩을 나눠준다.",
+                    "consume_item": "롱패딩",
+                    "effect": {"mental" : 15},
+                    "requirements": {"requires_item": "롱패딩"},
+                    "player_response": "당신은 추위에 떨고 있는 이들에게 따뜻함을 선물했습니다. (-롱패딩, 멘탈 +15)"
+                },
+                {
+                    "description": "지나간다",
+                    "effect": {"mental": -20, "item" : "서울역의 경계"},
+                    "player_response": "당신은 나누어줄 물건을 찾아봤지만 찾을 수 없었습니다. (서울역의 경계, 멘탈- 20)"
+                }
+            ]
+        },
+        {
+            "story": "물품 보관함에서 잠겨진 자물쇠를 발견했습니다.",
+            "choices": [
+                {
+                    "description": "마침 열쇠가 있네",
+                    "consume_item": "열쇠",
+                    "effect": { "health": 0, "mental": 20, "money": 50, "item": "응급구조키트" },
+                    "requirements": { "requires_item": "열쇠" },
+                    "player_response": "철컥! 자물쇠가 열리자 그 안에는 생존에 필요한 응급구조키트와 돈이 들어있었습니다."
+                },
+                {
+                    "description": "자물쇠를 부수고 직접 열어본다.",
+                    "effect": { "health": -30, "mental": -20, "money": 50 },
+                    "requirements": {},
+                    "player_response": "자물쇠를 부수려다 부상을 입었지만, 조금의 돈을 얻었습니다."
+                }
+            ]
+        },
+        {
+            "story": "서울역을 떠나는 길, 시끄러운 소리가 들리고 있습니다.\n사람들 사이에서 다툼이 벌어진 듯 합니다.",
+            "choices": [
+                {
+                    "description": "무슨 일이시죠?"
+                }
+            ]
+        },
+        {
+            "story": "우린 서울역을 유지하기 위해 몇가지 규칙을 정했네\n번갈아서 식량을 구하기 위해 밖으로 나가야하는데,\n이 사람들이 지금 나가기 싫다고 버티고 있는거 아니겠는가",
+            "choices": [
+                {
+                    "description": "제가 대신 다녀오죠",
+                    "effect": { "health": -20, "mental": -10, "money": 0},
+                    "player_response": "고맙군. 하지만 그런 방법으로는 오래 가지 못할것이네 (체력 -20, 멘탈 -10)"
+                },
+                {
+                    "description": "그들이 규칙에 맞게 나가도록 설득한다.",
+                    "effect": { "health": 0, "mental": 10, "money": 10 },
+                    "requirements": {"requires_item": "신중함"},
+                    "player_response": "당신은 유연한 사고로 갈등을 해결했습니다. (멘탈 +10, 돈 +10)"
+                },
+                {
+                    "description": "적당히 맞춰주다가 빠진다.",
+                    "effect": { "health": 0, "mental": -30, "money": 0 },
+                    "requirements": {},
+                    "player_response": "너무 넓은 오지랖을 부린 것 같군요. 어서 빠져나갑시다. (멘탈 -30)"
+                }
+            ]
+        }
+    ]
+}
