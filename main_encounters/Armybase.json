@@ -5,7 +5,8 @@
             "story": "미군 조우 이벤트와 연계된 스토리",
             "choices": [
                 {
-                    "description": "구현 중..."
+                    "description": "구현 중...",
+                    "player_response": ""
                 }
             ]
         }
