@@ -1,0 +1,24 @@
+{
+    "id": "dog",
+    "story": "이런! 구덩이에 빠진 강아지를 발견했습니다.",
+    "choices": [
+        {
+            "description": "조심히 구해준다",
+            "effect": { "mental": 10 },
+            "requirements": {"requires_item": "집중력"},
+            "player_response": "아무도 다치는 일 없이 구출에 성공했습니다. (멘탈 10)"
+        },
+        {
+            "description": "구해준다",
+            "effect": { "health": -10, "mental": 10},
+            "requirements": {},
+            "player_response": "앞으로는 조심히 다니렴~ (체력 -10, 멘탈 10)"
+        },
+        {
+            "description": "지나간다",
+            "effect": { "mental": -20 },
+            "requirements": {},
+            "player_response": "마음이 좋지 않습니다... (멘탈 -20)"
+        }
+    ]
+}

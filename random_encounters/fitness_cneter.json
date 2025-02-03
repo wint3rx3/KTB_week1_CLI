@@ -1,0 +1,18 @@
+{
+    "id": "fitness_cneter",
+    "story": "당신은 버려진 헬스장을 발견했습니다.",
+    "choices": [
+        {
+            "description": "좋아, 운동만 조금 하고 갈까",
+            "effect": { "health": 10, "mental": -5, "money": 0 },
+            "requirements": {},
+            "player_response": "근손실은 못참지 (체력 + 10)"
+        },
+        {
+            "description": "지나간다.",
+            "effect": { "health": 0, "mental": 10, "money": 0 },
+            "requirements": {},
+            "player_response": "위험을 감수할 필요는 없지"
+        }
+    ]
+}

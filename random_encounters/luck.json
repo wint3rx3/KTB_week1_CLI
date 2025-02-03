@@ -1,0 +1,18 @@
+{
+    "id": "luck",
+    "story": "오늘은 운이 좋습니다! 잔해 사이에서 통조림을 구했습니다.",
+    "choices": [
+        {
+            "description": "좋았어! 한 번 살펴볼까?",
+            "effect": { "item": "식량" },
+            "requirements": {"requires_item": "추리력"},
+            "player_response": "어이쿠! 다칠 뻔 했네 (식량)"
+        },
+        {
+            "description": "좋았어!",
+            "effect": { "health": -10, "item": "식량"},
+            "requirements": {},
+            "player_response": "아야! 통조림을 꺼내다가 조금 다쳤습니다. (체력 -10, 식량)"
+        }
+    ]
+}

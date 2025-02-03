@@ -1,0 +1,25 @@
+{
+    "id": "eating_time!",
+    "story": "식사 시간 입니다!\n뭔가를 좀 먹어야 겠습니다.",
+    "choices": [
+        {
+            "description": "식사를 한다.",
+            "consume_item": "식량",
+            "effect": { "health": 20, "mental": 0, "money": 0 },
+            "requirements": { "requires_item": "식량" },
+            "player_response": "아주 호화로운 식사였습니다. (체력 +20)"
+        },
+        {
+            "description": "사냥을 좀 해볼까",
+            "effect": { "health": 5, "mental": 5, "money": 0 },
+            "requirements": {"min_health": 20},
+            "player_response": "음.. 조금 찝찝한걸 (체력 +5, 멘탈 +5)"
+        },
+        {
+            "description": "굶는다.",
+            "effect": { "health": -5, "mental": -5, "money": 0 },
+            "requirements": {},
+            "player_response": "훌쩍훌쩍... (체력 -5, 멘탈 -5)"
+        }
+    ]
+}

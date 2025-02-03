@@ -1,0 +1,30 @@
+{
+    "id": "library",
+    "story": "당신은 전쟁 전에 짓다 만 도서관을 발견했습니다.\n무슨 책을 읽을까요?",
+    "choices": [
+        {
+            "description": "왕초보 생존 영어 회화",
+            "effect": { "item": "영어" },
+            "requirements": {},
+            "player_response": "ABCD~ (영어)"
+        },
+        {
+            "description": "셜록홈즈",
+            "effect": { "mental": 5, "item": "추리력" },
+            "requirements": {},
+            "player_response": "범인은 반드시 현장에 다시 돌아온다... (멘탈 +5, 추리력)"
+        },
+        {
+            "description": "타짜의 기술",
+            "effect": { "mental": -5, "item": "능숙한 거짓말" },
+            "requirements": {},
+            "player_response": "동작 그만, 맡장 빼기냐? (멘탈-5, 능숙한 거짓말)"
+        },
+        {
+            "description": "내일은 유도왕",
+            "effect": { "health": 5, "item": "유도" },
+            "requirements": {},
+            "player_response": "슉! 슈슉! (체력 +5, 유도)"
+        }
+    ]
+}

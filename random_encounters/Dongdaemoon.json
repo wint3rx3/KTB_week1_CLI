@@ -1,0 +1,24 @@
+{
+    "id": "Dongdaemoon",
+    "story": "골라 골라~ 당신은 동대문 시장에 도착했습니다.",
+    "choices": [
+        {
+            "description": "열쇠",
+            "effect": { "money": -15, "item": "열쇠" },
+            "requirements": {},
+            "player_response": "나중에 요긴하게 쓸 수 있을 것입니다."
+        },
+        {
+            "description": "롱패딩",
+            "effect": { "money": -10, "item": "롱패딩" },
+            "requirements": {},
+            "player_response": "추운건 싫어..."
+        },
+        {
+            "description": "식량",
+            "effect": {"money": -5, "item": "식량"},
+            "requirements": {},
+            "player_response": "식량 확보는 생존의 기본입니다."
+        }
+    ]
+}
